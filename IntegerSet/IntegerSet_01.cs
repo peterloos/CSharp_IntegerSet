@@ -113,17 +113,17 @@ namespace IntegerSet_Array
         }
 
         // comparison operators
-        public static bool operator ==(IntegerSet s1, IntegerSet s2)
+        public static bool operator==(IntegerSet s1, IntegerSet s2)
         {
             return s1.Equals(s2);
         }
 
-        public static bool operator !=(IntegerSet s1, IntegerSet s2)
+        public static bool operator!=(IntegerSet s1, IntegerSet s2)
         {
             return !(s1 == s2);
         }
 
-        public static bool operator <=(IntegerSet s1, IntegerSet s2)
+        public static bool operator<=(IntegerSet s1, IntegerSet s2)
         {
             // compare both sets element per element
             for (int i = 0; i < s1.Size; i++)
@@ -133,17 +133,17 @@ namespace IntegerSet_Array
             return true;
         }
 
-        public static bool operator >=(IntegerSet s1, IntegerSet s2)
+        public static bool operator>=(IntegerSet s1, IntegerSet s2)
         {
             return s2 <= s1;
         }
 
-        public static bool operator <(IntegerSet s1, IntegerSet s2)
+        public static bool operator<(IntegerSet s1, IntegerSet s2)
         {
             return (s1 <= s2) && (s1 != s2);
         }
 
-        public static bool operator >(IntegerSet s1, IntegerSet s2)
+        public static bool operator>(IntegerSet s1, IntegerSet s2)
         {
             return !(s1 <= s2);
         }
@@ -157,7 +157,7 @@ namespace IntegerSet_Array
         }
 
         // set theory specific operators
-        public static IntegerSet operator +(IntegerSet s1, IntegerSet s2)
+        public static IntegerSet operator+(IntegerSet s1, IntegerSet s2)
         {
             IntegerSet s = (IntegerSet)s1.Clone();
             for (int i = 0; i < s2.elements.Length; i++)
@@ -166,7 +166,7 @@ namespace IntegerSet_Array
             return s;
         }
 
-        public static IntegerSet operator -(IntegerSet s1, IntegerSet s2)
+        public static IntegerSet operator-(IntegerSet s1, IntegerSet s2)
         {
             IntegerSet s = (IntegerSet)s1.Clone();
             for (int i = 0; i < s2.elements.Length; i++)
@@ -175,7 +175,7 @@ namespace IntegerSet_Array
             return s;
         }
 
-        public static IntegerSet operator ^(IntegerSet s1, IntegerSet s2)
+        public static IntegerSet operator^(IntegerSet s1, IntegerSet s2)
         {
             IntegerSet s = new IntegerSet();
             for (int i = 0; i < s1.elements.Length; i++)

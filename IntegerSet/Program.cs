@@ -8,7 +8,7 @@ class Program
 {
     public static void Main()
     {
-        TestingCtorsDtor();
+        TestingCtors();
         TestingMethods();
         TestingRemove();
         TestingInsert();
@@ -19,7 +19,7 @@ class Program
         TestingIEnumerable();
     }
 
-    private static void TestingCtorsDtor()
+    private static void TestingCtors()
     {
         Console.WriteLine("Testing c'tors / d'tor: ");
 

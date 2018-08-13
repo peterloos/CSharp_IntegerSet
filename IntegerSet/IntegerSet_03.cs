@@ -8,7 +8,7 @@ namespace IntegerSet_List
     class IntegerSet : ICloneable, IEnumerable
     {
         // private member data
-        private List<int> elements;  // list of elementss
+        private List<int> elements;  // list of elements
 
         // c'tors
         public IntegerSet()
